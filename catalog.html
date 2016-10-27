@@ -58,7 +58,7 @@
           <form action="#" method="get">
             <input type="text" name="email-field" placeholder="Электронная почта">
             <input type="password" name="password-field" placeholder="Пароль">
-            <button class="btn" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+            <button class="btn" type="submit" name="search">Войти</button> <!-- TODO ссылка? -->
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </form>
@@ -66,17 +66,21 @@
       </div>
 
       <div class="cart">
-        <a class="cart" href="#">Пусто</a>
+        <a class="cart" href="#">2 товара</a>
         <div class="cart-popup">
           <form action="#" method="get">
             <table>
               <tr>
+                <td>
+                  <input class="btn-delete" type="checkbox" name="btn-delete" checked> <!-- TODO какой элемент? -->
                 </td>
                 <td>Пломбир с апельсиновым джемом</td>
                 <td>1,5кг х 200 руб</td>
                 <td>300 руб.</td>
               </tr>
               <tr>
+                <td>
+                  <button class="btn-delete" name="btn-delete">Удалить</button> <!-- TODO какой элемент? -->
                 </td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5кг х 300 руб.</td>
@@ -111,7 +115,8 @@
           <div class="catalog-filter-sort">
             <div class="filter-title">Сортировка:</div>
             <select class="catalog-filter-sort-select" name="sort">
-              <option selected>сначала недорогие</option>
+              <option selected>по популярности</option>
+              <option>сначала недорогие</option>
               <option>сначала дорогие</option>
               <option>по жирности</option>
             </select>
@@ -155,84 +160,84 @@
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_orange_citric.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">310 TODO/кг</span>
+              <span class="catalog-item-price">310 &#8381;/кг</span>
               <a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_coffee_choco.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">380 TODO/кг</span>
+              <span class="catalog-item-price">380 &#8381;/кг</span>
               <a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_strawberry_white_choco.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">355 TODO/кг</span>
+              <span class="catalog-item-price">355 &#8381;/кг</span>
               <a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_brulee_caramel_dressing.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">415 TODO/кг</span>
+              <span class="catalog-item-price">415 &#8381;/кг</span>
               <a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_foxberry_jam.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">325 TODO/кг</span>
+              <span class="catalog-item-price">325 &#8381;/кг</span>
               <a href="#"><p>Сливочное с брусничным джемом</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_blackberry.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">410 TODO/кг</span>
+              <span class="catalog-item-price">410 &#8381;/кг</span>
               <a href="#"><p>Сливочно-черничное с цельными ягодами черники</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_lemon_caramel.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">375 TODO/кг</span>
+              <span class="catalog-item-price">375 &#8381;/кг</span>
               <a href="#"><p>Сливочно-лимонное с карамельной присыпкой</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_choco_chips.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">320 TODO/кг</span>
+              <span class="catalog-item-price">320 &#8381;/кг</span>
               <a href="#"><p>Сливочное с шоколадной стружкой</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_vanilla_choco.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">440 TODO/кг</span>
+              <span class="catalog-item-price">440 &#8381;/кг</span>
               <a href="#"><p>Сливочно-ванильное с кусочками шоколада</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_menthol_syrup.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">435 TODO/кг</span>
+              <span class="catalog-item-price">435 &#8381;/кг</span>
               <a href="#"><p>Сливочное с ментоловым сиропом</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_black_choco.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">355 TODO/кг</span>
+              <span class="catalog-item-price">355 &#8381;/кг</span>
               <a href="#"><p>Сливочное с кусочками черного шоколада</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="catalog-item">
               <div class="hit-mark hide"></div>
               <img class="catalog-item-picture" src="img/cream_mint_syrup.jpg" alt="" width="TODO" height="TODO">
-              <span class="catalog-item-price">420 TODO/кг</span>
+              <span class="catalog-item-price">420 &#8381;/кг</span>
               <a href="#"><p>Сливочное с мятным сиропом</p></a>
               <a class="btn" href="#">Быстрый просмотр</a>
             </article>
@@ -264,7 +269,7 @@
       </div>
       <div class="developers">
         <img src="img/ha_logo.jpg" alt="" width="TODO" height="TODO">
-        Сделано в <a href="#">HTML Academy</a> TODO 2016
+        Сделано в <a href="#">HTML Academy</a> &copy; 2016
       </div>
     </footer>
   </body>

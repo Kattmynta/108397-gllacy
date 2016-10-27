@@ -1,9 +1,4 @@
-﻿<!--
-  Кнопка "Давайте оба!" - это часть слайдера?
-  Как слайдер реализовать вообще?)
--->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -61,7 +56,7 @@
           <form action="#" method="get">
             <input type="text" name="email-field" placeholder="Электронная почта">
             <input type="password" name="password-field" placeholder="Пароль">
-            <button class="btn" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+            <button class="btn" type="submit" name="search">Войти</button> <!-- TODO ссылка? -->
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </form>
@@ -77,8 +72,8 @@
     </header>
     <main>
 
-      <div class="slider"> <!-- TODO -->
-        <ul>
+      <div class="slider-container"> <!-- TODO -->
+        <ul class="slider">
           <li>
             <div class="slider-item">
               <img src="slider_img1.jpg" alt="">
@@ -123,28 +118,28 @@
         <article class="catalog-item">
           <div class="hit-mark show"></div>
           <img class="catalog-item-picture" src="img/cream_orange_citric.jpg" alt="" width="TODO" height="TODO">
-          <span class="catalog-item-price">310 TODO/кг</span>
+          <span class="catalog-item-price">310 &#8381;/кг</span>
           <a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <div class="hit-mark show"></div>
           <img class="catalog-item-picture" src="img/cream_coffee_choco.jpg" alt="" width="TODO" height="TODO">
-          <span class="catalog-item-price">380 TODO/кг</span>
+          <span class="catalog-item-price">380 &#8381;/кг</span>
           <a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <div class="hit-mark show"></div>
           <img class="catalog-item-picture" src="img/cream_strawberry_white_choco.jpg" alt="" width="TODO" height="TODO">
-          <span class="catalog-item-price">355 TODO/кг</span>
+          <span class="catalog-item-price">355 &#8381;/кг</span>
           <a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <div class="hit-mark show"></div>
           <img class="catalog-item-picture" src="img/cream_brulee_caramel_dressing.jpg" alt="" width="TODO" height="TODO">
-          <span class="catalog-item-price">415 TODO/кг</span>
+          <span class="catalog-item-price">415 &#8381;/кг</span>
           <a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
@@ -211,9 +206,14 @@
           <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </div>
-      <!-- TODO как позиционировать относительно вьюпорта? -->
       <div class="feedback-popup">
-        <!-- TODO -->
+        <form action="#" method="post">
+          <div class="feedback-text">Мы обязательно вам ответим!</div>
+          <input type="text" name="name" placeholder="Как вас зовут?">
+          <input type="text" name="email" placeholder="Ваша почта для ответа">
+          <textarea rows="5" name="text" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn" type="submit" name="send">Отправить</button>
+        </form>
       </div>
     </main>
     <footer class="main-footer">
@@ -233,7 +233,7 @@
       </div>
       <div class="developers">
         <img src="img/ha_logo.jpg" alt="" width="TODO" height="TODO">
-        Сделано в <a href="#">HTML Academy</a> TODO 2016
+        Сделано в <a href="#">HTML Academy</a> &copy; 2016
       </div>
     </footer>
   </body>
