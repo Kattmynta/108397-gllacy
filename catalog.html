@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров - Gllacy</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo" href="index.html">
+        <img src="img/logo.jpg" alt="Gllacy Shop" width="TODO" height="TODO">
+      </a>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a class="main-menu-active" href="#">Каталог</a>
+            <div class="catalog-popup">
+              <ul>
+                <li>
+                  <a class="catalog-popup-marked" href="#">Новинки</a><hr>
+                </li>
+                <li>
+                  <a href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <a href="#">Поиск</a>
+        <div class="search-popup">
+          <form action="#" method="get">
+            <input type="text" name="search-field" placeholder="Что ищем?">
+            <button class="btn hide" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+          </form>
+        </div>
+      </div>
+
+      <div class="login-container">
+        <a class="login" href="#">Вход</a>
+        <div class="login-popup">
+          <form action="#" method="get">
+            <input type="text" name="email-field" placeholder="Электронная почта">
+            <input type="password" name="password-field" placeholder="Пароль">
+            <button class="btn" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
+        </div>
+      </div>
+
+      <div class="cart">
+        <a class="cart" href="#">Пусто</a>
+        <div class="cart-popup">
+          <form action="#" method="get">
+            <table>
+              <tr>
+                </td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5кг х 200 руб</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                </td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <hr>
+            <div class="">Итого: 750 руб.</div>
+            <button class="btn" type="submit" name="search">Оформить заказ</button> <!-- TODO ссылка? -->
+          </form>
+        </div>
+      </div>
+
+      <div class="work-hours">С 10 до 20, ежедневно</div>
+      <div class="phone">8 812 450-25-25</div>
+    </header>
+    <main>
+      <ul class="bread-crumbs">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Сливочное</a>
+        </li>
+      </ul>
+      <h1 class="catalog-header">Сливочное мороженое</h1>
+      <div class="catalog">
+        <form class="catalog-filter"action="#" method="post">
+          <div class="catalog-filter-sort">
+            <div class="filter-title">Сортировка:</div>
+            <select class="catalog-filter-sort-select" name="sort">
+              <option selected>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
+          </div>
+          <div class="catalog-filter-price">
+            <div class="filter-title">Цена: <span class="price-range">100 руб. - 500 руб.</span></div>
+            <div id="slider"></div>
+          </div>
+          <div class="catalog-filter-fat-content">
+            <div class="filter-title">Жирность:</div>
+            <div class="catalog-filter-fat-content-select">
+              <input type="radio" id="fc-0-field" name="fat-content" value="fc-0">
+              <label for="fc-0-field">0%</label>
+              <input type="radio" id="fc-10-less-field" name="fat-content" value="fc-10-less" checked>
+              <label for="fc-10-less-field">до 10%</label>
+              <input type="radio" id="fc-30-less-field" name="fat-content" value="fc-30-less">
+              <label for="fc-30-less-field">до 30%</label>
+              <input type="radio" id="fc-30-greater-field" name="fat-content" value="fc-30-greater">
+              <label for="fc-30-greater-field">выше 30%</label>
+            </div>
+          </div>
+          <div class="catalog-filter-fillers">
+            <div class="filter-title">Наполнители:</div>
+            <div class="catalog-filter-fillers-select">
+              <input type="checkbox" id="chocolate-field" name="chocolate" checked>
+              <label for="chocolate-field">шоколадные</label>
+              <input type="checkbox" id="sugar-field" name="sugar" checked>
+              <label for="sugar-field">сахарные присыпки</label>
+              <input type="checkbox" id="fruct-field" name="fruct">
+              <label for="fruct-field">фрукты</label>
+              <input type="checkbox" id="syrup-field" name="syrup">
+              <label for="syrup-field">сиропы</label>
+              <input type="checkbox" id="jam-field" name="jam">
+              <label for="jam-field">джемы</label>
+            </div>
+          </div>
+          <button class="btn" type="submit">Применить</button>
+        </form>
+        <div class="catalog-container">
+          <div class="catalog-items-list">
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_orange_citric.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">310 TODO/кг</span>
+              <a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_coffee_choco.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">380 TODO/кг</span>
+              <a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_strawberry_white_choco.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">355 TODO/кг</span>
+              <a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_brulee_caramel_dressing.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">415 TODO/кг</span>
+              <a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_foxberry_jam.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">325 TODO/кг</span>
+              <a href="#"><p>Сливочное с брусничным джемом</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_blackberry.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">410 TODO/кг</span>
+              <a href="#"><p>Сливочно-черничное с цельными ягодами черники</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_lemon_caramel.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">375 TODO/кг</span>
+              <a href="#"><p>Сливочно-лимонное с карамельной присыпкой</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_choco_chips.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">320 TODO/кг</span>
+              <a href="#"><p>Сливочное с шоколадной стружкой</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_vanilla_choco.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">440 TODO/кг</span>
+              <a href="#"><p>Сливочно-ванильное с кусочками шоколада</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_menthol_syrup.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">435 TODO/кг</span>
+              <a href="#"><p>Сливочное с ментоловым сиропом</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_black_choco.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">355 TODO/кг</span>
+              <a href="#"><p>Сливочное с кусочками черного шоколада</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+            <article class="catalog-item">
+              <div class="hit-mark hide"></div>
+              <img class="catalog-item-picture" src="img/cream_mint_syrup.jpg" alt="" width="TODO" height="TODO">
+              <span class="catalog-item-price">420 TODO/кг</span>
+              <a href="#"><p>Сливочное с мятным сиропом</p></a>
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </article>
+          </div>
+          <div class="catalog-paginator">
+            <span class="current-page">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+          </div>
+        </div>
+      </div> <!--class="catalog"-->
+    </main>
+    <footer class="main-footer">
+      <div class="social">
+        <a class="btn-social btn-social-twitter" href="#" title="Twitter">Twitter</a>
+        <a class="btn-social btn-social-instagram" href="#" title="Instagram">Instagram</a>
+        <a class="btn-social btn-social-fb" href="#" title="Facebook">Facebook</a>
+        <a class="btn-social btn-social-vk" href="#" title="VK">Вконтакте</a>
+      </div>
+      <div class="about">
+        <a class="information-for-vendors" href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+      </div>
+      <div class="documents">
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </div>
+      <div class="developers">
+        <img src="img/ha_logo.jpg" alt="" width="TODO" height="TODO">
+        Сделано в <a href="#">HTML Academy</a> TODO 2016
+      </div>
+    </footer>
+  </body>
+</html>

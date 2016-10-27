@@ -1,12 +1,240 @@
+﻿<!--
+  Кнопка "Давайте оба!" - это часть слайдера?
+  Как слайдер реализовать вообще?)
+-->
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllacy</title>
   </head>
   <body>
+    <header class="main-header">
+      <img class="logo" src="img/logo.jpg" alt="Gllacy Shop" width="TODO" height="TODO">
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+            <div class="catalog-popup">
+              <ul>
+                <li>
+                  <a class="catalog-popup-marked" href="#">Новинки</a><hr>
+                </li>
+                <li>
+                  <a href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <div class="search">
+        <a href="#">Поиск</a>
+        <div class="search-popup">
+          <form action="#" method="get">
+            <input type="text" name="search-field" placeholder="Что ищем?">
+            <button class="btn hide" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+          </form>
+        </div>
+      </div>
 
+      <div class="login-container">
+        <a class="login" href="#">Вход</a>
+        <div class="login-popup">
+          <form action="#" method="get">
+            <input type="text" name="email-field" placeholder="Электронная почта">
+            <input type="password" name="password-field" placeholder="Пароль">
+            <button class="btn" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
+        </div>
+      </div>
+
+      <div class="cart">
+        <a class="cart" href="#">Пусто</a>
+      </div>
+
+      <div class="work-hours">С 10 до 20, ежедневно</div>
+      <div class="phone">8 812 450-25-25</div>
+    </header>
+    <main>
+
+      <div class="slider"> <!-- TODO -->
+        <ul>
+          <li>
+            <div class="slider-item">
+              <img src="slider_img1.jpg" alt="">
+              <span class="slider-item-title">
+                Крем-брюле и пломбир<br>
+                с малиновым джемом
+              </span>
+            </div>
+            </div>
+          </li>
+          <li>
+            <img src="slider_img2.jpg" alt="">
+              <span class="slider-item-title">
+                Пломбир с кусочками свинины<br> <!-- TODO убрать -->
+                и щербет на гриле
+              </span>
+          </li>
+          <li>
+            <img src="slider_img3.jpg" alt="">
+              <span class="slider-item-title">
+                Просто два куска льда <!-- TODO убрать -->
+              </span>
+          </li>
+        </ul>
+        <a class="btn" href="#">Давайте оба!</a>
+      </div>
+
+      <div class="special-offer-list">
+        <div class="special-offer-container-left">
+          <div class="special-offer-title">Малинка даром!</div>
+          <p class="special-offer-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
+        </div>
+        <div class="special-offer-container-right">
+          <div class="special-offer-title">Шоколадки даром!</div>
+          <p class="special-offer-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="btn" href="#">Хочу шоколадки!</a>
+        </div>
+      </div>
+
+      <div class="hit-list">
+        <article class="catalog-item">
+          <div class="hit-mark show"></div>
+          <img class="catalog-item-picture" src="img/cream_orange_citric.jpg" alt="" width="TODO" height="TODO">
+          <span class="catalog-item-price">310 TODO/кг</span>
+          <a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <div class="hit-mark show"></div>
+          <img class="catalog-item-picture" src="img/cream_coffee_choco.jpg" alt="" width="TODO" height="TODO">
+          <span class="catalog-item-price">380 TODO/кг</span>
+          <a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <div class="hit-mark show"></div>
+          <img class="catalog-item-picture" src="img/cream_strawberry_white_choco.jpg" alt="" width="TODO" height="TODO">
+          <span class="catalog-item-price">355 TODO/кг</span>
+          <a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <div class="hit-mark show"></div>
+          <img class="catalog-item-picture" src="img/cream_brulee_caramel_dressing.jpg" alt="" width="TODO" height="TODO">
+          <span class="catalog-item-price">415 TODO/кг</span>
+          <a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+
+      <div class="about-us">
+        <p class="about-us-title">Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженого собственного производства на развес</p>
+        <div class="about-us-paragraph">
+          <div class="about-us-paragraph-icon icon-icecream"></div> <!-- а это не маркер списка случайно? -->
+          <p class="about-us-paragraph-text">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          </p>
+        </div>
+        <div class="about-us-paragraph">
+          <div class="about-us-paragraph-icon icon-eco"></div>
+          <p class="about-us-paragraph-text">
+            Для приготовления мороженго используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
+          </p>
+        </div>
+        <div class="about-us-paragraph">
+          <div class="about-us-paragraph-icon icon-farm"></div>
+          <p class="about-us-paragraph-text">
+            Закупка ингредиентов проивзодится только у проверенных фермерских хозяйств и компаний, с которыми нас связыват долговременное сотрудничество.
+          </p>
+        </div>
+        <div class="about-us-paragraph">
+          <div class="about-us-paragraph-icon icon-termo"></div>
+          <p class="about-us-paragraph-text">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растатья в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </div>
+      </div>
+
+      <div class="news-subsrcibe-container">
+        <div class="news">
+          <div>Новое в нашем блоге</div>
+          <a class="news-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe-stripy-border">
+            <form class="subscribe-form" action="#" method="post">
+              <p>
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <input type="text" name="email" placeholder="Электронная почта">
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class="map-marker"></div>
+        <div class="feedback">
+          <p>
+            Адрес главного офиса и оффлайн магазина:<br>
+            <span class="addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
+          <p>
+            Для заказов по телефону:<br>
+            <span  class="phone">8  812 450-25-25</span><br>
+            (c 10 до 20 ежедневно)
+          </p>
+          <a class="btn" href="#">Форма обратной связи</a>
+        </div>
+      </div>
+      <!-- TODO как позиционировать относительно вьюпорта? -->
+      <div class="feedback-popup">
+        <!-- TODO -->
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="social">
+        <a class="btn-social btn-social-twitter" href="#" title="Twitter">Twitter</a>
+        <a class="btn-social btn-social-instagram" href="#" title="Instagram">Instagram</a>
+        <a class="btn-social btn-social-fb" href="#" title="Facebook">Facebook</a>
+        <a class="btn-social btn-social-vk" href="#" title="VK">Вконтакте</a>
+      </div>
+      <div class="about">
+        <a class="information-for-vendors" href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+      </div>
+      <div class="documents">
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </div>
+      <div class="developers">
+        <img src="img/ha_logo.jpg" alt="" width="TODO" height="TODO">
+        Сделано в <a href="#">HTML Academy</a> TODO 2016
+      </div>
+    </footer>
   </body>
 </html>
