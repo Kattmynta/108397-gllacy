@@ -6,9 +6,11 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="logo" src="img/logo.jpg" alt="Gllacy Shop" width="154" height="64">
       <nav class="main-menu">
         <ul>
+          <li>
+            <img class="logo" src="img/logo.jpg" alt="Gllacy Shop" width="154" height="64">
+          </li>
           <li>
             <a href="#">Каталог</a>
             <div class="catalog-popup">
@@ -17,7 +19,7 @@
                   <a class="catalog-popup-marked" href="#">Новинки</a><hr>
                 </li>
                 <li>
-                  <a href="#">Сливочное</a>
+                  <a href="catalog.html">Сливочное</a>
                 </li>
                 <li>
                   <a href="#">Щербеты</a>
@@ -45,7 +47,6 @@
         <div class="search-popup">
           <form action="#" method="get">
             <input type="text" name="search-field" placeholder="Что ищем?">
-            <button class="btn hide" type="submit" name="search">Искать</button> <!-- TODO ссылка? -->
           </form>
         </div>
       </div>
@@ -53,13 +54,11 @@
       <div class="login-container">
         <a class="login" href="#">Вход</a>
         <div class="login-popup">
-          <form action="#" method="get">
             <input type="text" name="email-field" placeholder="Электронная почта">
             <input type="password" name="password-field" placeholder="Пароль">
-            <button class="btn" type="submit" name="search">Войти</button> <!-- TODO ссылка? -->
+          <a class="btn" href="#">Войти</a>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
-          </form>
         </div>
       </div>
 
@@ -117,30 +116,46 @@
 
       <div class="hit-list">
         <article class="catalog-item">
-          <div class="hit-mark show"></div>
+          <div class="hit-mark"></div>
           <img class="catalog-item-picture" src="img/cream_orange_citric.jpg" alt="" width="267" height="267">
-          <span class="catalog-item-price">310 &#8381;/кг</span>
+              <div class="catalog-item-price">
+                <span>310</span>
+                <img src="#" alt="rub" width="" height="">
+                <span>/кг</span>
+              </div>
           <a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <div class="hit-mark show"></div>
+          <div class="hit-mark"></div>
           <img class="catalog-item-picture" src="img/cream_coffee_choco.jpg" alt="" width="267" height="267">
-          <span class="catalog-item-price">380 &#8381;/кг</span>
+              <div class="catalog-item-price">
+                <span>380</span>
+                <img src="#" alt="rub" width="" height="">
+                <span>/кг</span>
+              </div>
           <a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <div class="hit-mark show"></div>
+          <div class="hit-mark"></div>
           <img class="catalog-item-picture" src="img/cream_strawberry_white_choco.jpg" alt="" width="267" height="267">
-          <span class="catalog-item-price">355 &#8381;/кг</span>
+              <div class="catalog-item-price">
+                <span>355</span>
+                <img src="#" alt="rub" width="" height="">
+                <span>/кг</span>
+              </div>
           <a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <div class="hit-mark show"></div>
+          <div class="hit-mark"></div>
           <img class="catalog-item-picture" src="img/cream_brulee_caramel_dressing.jpg" alt="" width="267" height="267">
-          <span class="catalog-item-price">415 &#8381;/кг</span>
+              <div class="catalog-item-price">
+                <span>415</span>
+                <img src="#" alt="rub" width="" height="">
+                <span>/кг</span>
+              </div>
           <a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
