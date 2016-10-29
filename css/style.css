@@ -1,0 +1,27 @@
+﻿body {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto;
+
+  color: #ffffff;
+  background-color: #849d8f; /* TODO */
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  font-family: Roboto;
+
+  color: #ffffff;
+}
+
+.hit-mark {
+  display: block;
+  width: 61px;
+  height: 61px;
+
+  font-size: 0;
+
+  background-image: url(../img/hit.png);
+}
