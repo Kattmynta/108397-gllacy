@@ -11,9 +11,6 @@ h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
-  font-family: Roboto;
-
-  color: #ffffff;
 }
 
 .hit-mark {
@@ -24,4 +21,34 @@ h1 {
   font-size: 0;
 
   background-image: url(../img/hit.png);
+}
+
+.btn-social {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  
+  font-size: 0;
+  
+  background-color: #849d8f;
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+  border: 3px solid #C2CEC7;
+  border-radius: 50%;
+}
+
+.btn-social-twitter {
+  background-image: url(../img/social-twitter.png);
+}
+
+.btn-social-instagram {
+  background-image: url(../img/social-insta.png);
+}
+
+.btn-social-fb {
+  background-image: url(../img/social-fb.png);
+}
+
+.btn-social-vk {
+  background-image: url(../img/social-vk.png);
 }
