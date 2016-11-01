@@ -1,7 +1,7 @@
 ﻿body {
   font-size: 16px;
   line-height: 22px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif, Arial;
 
   color: #ffffff;
   background-color: #849d8f; /* TODO */
@@ -14,7 +14,7 @@ h1 {
 }
 
 .catalog-item-picture {
-   border-radius: 50%;
+  border-radius: 50%;
 }
 
 .hit-mark {
