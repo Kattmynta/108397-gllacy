@@ -13,6 +13,10 @@ h1 {
   font-weight: bold;
 }
 
+.catalog-item-picture {
+   border-radius: 50%;
+}
+
 .hit-mark {
   display: block;
   width: 61px;
@@ -27,13 +31,13 @@ h1 {
   display: inline-block;
   width: 29px;
   height: 29px;
-  
+
   font-size: 0;
-  
+
   background-color: #849d8f;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: 50% 50%;
-  border: 3px solid #C2CEC7;
+  border: 3px solid #c2cec7;
   border-radius: 50%;
 }
 
