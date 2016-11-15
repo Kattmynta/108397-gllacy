@@ -1,10 +1,22 @@
-﻿body {
+﻿/* * {
+  outline: 1px solid brown;
+} */
+
+html {
+  background-color: #ffffff;
+}
+
+body {
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", sans-serif, Arial;
+  font-family: "Roboto", "Arial", sans-serif;
 
   color: #ffffff;
-  background-color: #849d8f; /* TODO */
+  background-color: #849d8f;
+
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -13,8 +25,273 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  color: #ffffff;
+}
+
+ul { /* TODO: */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn {
+
+}
+
+.header-btn {
+  display: block;
+	font-size: 14px;
+	background-color: #b0c0b7;
+	border-radius: 20px;
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.page-wrapper {
+
+}
+
+.slider-controls {
+  display: none;
+}
+
+header, main, footer {
+  width: auto;
+  padding: 0 2.3%;
+  margin: 0;
+}
+
+header {
+  padding-top: 10px;
+}
+
+main {
+  position: relative;
+}
+
+.main-menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.user-block {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu .logo {
+  float: left;
+  margin-left: -5px;
+}
+
+.main-menu-ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 15px;
+  margin-top: 13px;
+  font-size: 0;
+}
+
+.main-menu-ul > li {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+
+.main-menu-ul > li > a {
+  display: block;
+  font-weight: bold;
+  padding: 6px 14px 6px 13px;
+  background-color: brown;
+  margin-right: 1px;
+}
+
+.main-menu-ul li .submenu-ul {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 143px;
+  left: -7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f8f7f4;
+}
+
+.main-menu-ul li:hover .submenu-ul {
+  display: block;
+}
+
+.submenu-ul a {
+  display: block;
+  font-weight: normal;
+  padding: 6px 14px 6px 13px;
+  color: black;
+  background-color: #f8f7f4;
+  margin-right: 1px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.submenu-ul .catalog-popup-marked {
+  font-weight: bold;
+}
+
+.search {
+  position: relative;
+  float: left;
+}
+
+.search:before {
+  background-image: url(../img/lens.png);
+  background-position: center center;
+}
+
+.search a {
+  font-size: 0;
+}
+
+.search .search-popup {
+  display: none;
+  position: absolute;
+}
+
+.search:hover {
+
+}
+
+.search:hover .search-popup {
+  display: block;
+}
+
+.login-container {
+  position: relative;
+  float: left;
+}
+
+.login-container a {
+
+}
+
+.login-container .login-popup {
+  display: none;
+  position: absolute;
+}
+
+.login-container:hover {
+
+}
+
+.login-container:hover .login-popup {
+  display: block;
+}
+
+.cart {
+  position: relative;
+  float: left;
+}
+
+.cart > a {
+
+}
+
+.cart .cart-popup {
+  display: none;
+  position: absolute;
+}
+
+.cart:hover {
+
+}
+
+.cart:hover .cart-popup {
+  display: block;
+}
+
+.info {
+  position: absolute;
+  right: 2.3%;
+  top: -10px;
+  width: 200px;
+  text-align: right;
+}
+
+.work-hours {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.phone {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.slider-container {
+	padding-top:319px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item-title {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.special-offer-container-left {
+  float: left;
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+  background-color: #b91d4b;
+  background-image: url(../img/bg-rapsberry.jpg);
+}
+
+.special-offer-container-right {
+  float: right;
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+  background-color: #5b351e;
+  background-image: url(../img/bg-chocolate.jpg);
+}
+
+.hit-list {
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 293px;
+  font-size: 16px;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+}
+
 .catalog-item-picture {
   border-radius: 50%;
+}
+
+.img-ruble {
+  display: inline-block;
 }
 
 .hit-mark {
@@ -25,6 +302,239 @@ h1 {
   font-size: 0;
 
   background-image: url(../img/hit.png);
+}
+
+.seo {
+  background-color: #e4d6b7;
+  background-image: url(../img/bg-vaffle.jpg);
+  border-radius: 15px;
+  color: #323232;
+  font-size: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.seo-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 24px;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+.seo-paragraph {
+  position: relative;
+  box-sizing: border-box;
+  width: 48.7%;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 55px;
+  padding-top: 22px;
+  vertical-align: top;
+  margin: 0;
+}
+
+.seo-group .seo-paragraph:first-child {
+  float: left;
+}
+
+.seo-group .seo-paragraph:last-child {
+  float: right;
+}
+
+.seo-paragraph:before {
+  position: absolute;
+  content: '';
+	top: 10px;
+	left: 0;
+  width: 47px;
+	height: 47px;
+}
+
+.seo-top .seo-paragraph:first-child:before {
+  background: url(../img/icecream.png) no-repeat center center;
+}
+
+.seo-top .seo-paragraph:last-child:before {
+  background: url(../img/cow.png) no-repeat center center;
+}
+
+.seo-bottom .seo-paragraph:first-child:before {
+  background: url(../img/leaf.png) no-repeat center center;
+}
+
+.seo-bottom .seo-paragraph:last-child:before {
+  background: url(../img/thermo.png) no-repeat center center;
+}
+
+.news-subsrcibe-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news {
+  float: left;
+  box-sizing: border-box;
+  width: 48.9%;
+  height: 220px;
+  background: #ffffff url(../img/bg-strawberry.jpg) no-repeat;
+  border-radius: 15px;
+  padding: 22px 20px;
+}
+
+.news h2 {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.news a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.subscribe-container {
+  float: right;
+  box-sizing: border-box;
+  width: 48.9%;
+  height: 220px;
+  background: #ffffff url(../img/bg-post.png) repeat;
+  border-radius: 15px;
+}
+
+.subscribe {
+  box-sizing: border-box;
+  width: auto;
+  height: 210px;
+  background-color: #f8f7f4;
+  border-radius: 11px;
+  margin: 5px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 22px;
+  padding-right: 20px;
+}
+
+.subscribe p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.subscribe input {
+  width: 342px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  padding: 9px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 6px;
+}
+
+.subscribe .btn {
+  font-size: 18px;
+  color: #fefefe;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  padding: 10px 20px 12px 20px;
+  background-color: #e95038; /* TODO gradient, shadow*/
+  text-align: center;
+}
+
+.subscribe .btn:hover {
+  font-size: 18px;
+  color: #fefefe;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  padding: 10px 20px 12px 20px;
+  background-color: #f38367; /* TODO gradient, shadow*/
+  text-align: center;
+}
+
+.subscribe .btn:active {
+  font-size: 18px;
+  color: #fefefe;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  padding: 10px 20px 12px 20px;
+  background-color: #f38367; /* TODO gradient, shadow*/
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.footer-social {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-info {
+  float: left;
+}
+
+.footer-copyright {
+  float: right;
+}
+
+/*       <footer class="main-footer container clearfix">
+        <ul class="footer-social">
+          <li>
+            <a class="btn-social btn-social-twitter" href="#" title="Twitter">Twitter</a>
+          </li>
+          <li>
+            <a class="btn-social btn-social-instagram" href="#" title="Instagram">Instagram</a>
+          </li>
+          <li>
+            <a class="btn-social btn-social-fb" href="#" title="Facebook">Facebook</a>
+          </li>
+          <li>
+            <a class="btn-social btn-social-vk" href="#" title="VK">Вконтакте</a>
+          </li>
+        </ul>
+
+        <div class="footer-info">
+          <div class="about">
+            <a class="information-for-vendors" href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="documents">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <img src="img/ha-logo.png" alt="" width="110" height="40">
+          Сделано в <a href="#">HTML Academy</a> &copy; 2016
+        </div>
+      </footer> */
+.footer-social li {
+  display: inline-block;
 }
 
 .btn-social {
@@ -56,3 +566,5 @@ h1 {
 .btn-social-vk {
   background-image: url(../img/social-vk.png);
 }
+
+
