@@ -41,7 +41,6 @@ ul { /* TODO: */
   line-height: 24px;
   text-align: center;
   border-radius: 25px;
-  outline: none;
   border: none;
   padding: 10px 20px 12px 20px;
   background-color: #e95038; /* TODO gradient, shadow*/
@@ -201,7 +200,6 @@ main {
 }
 
 .user-block input {
-  outline: none;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -606,14 +604,83 @@ main {
 }
 
 
-
-
-
-
-
 .catalog-container {
   outline: 1px solid green;
 }
+
+
+.catalog-filter {
+  display: block;
+  min-height: 135px;
+  margin: 0 2.3%;
+  
+  outline: 1px solid brown;
+}
+
+.catalog-filter-top {
+
+}
+
+.catalog-filter-sort {
+  min-width: 193px;
+  min-height: 60px;  
+
+  outline: 1px solid green;
+
+  float: left;
+  margin-right: 15px;  
+}
+
+.catalog-filter-price {
+  min-width: 220px;
+  min-height: 60px;
+  
+  outline: 1px solid green;
+  
+  float: left;
+  margin-right: 15px;
+}
+
+.catalog-filter-fat-content {
+  min-width: 415px;
+  min-height: 60px;
+  
+  outline: 1px solid green;
+  
+  float: left;
+}
+
+.catalog-filter-bottom {
+  position: relative;
+}
+
+.catalog-filter-fillers {
+  min-width: 702px;
+  min-height: 67px;
+  
+  outline: 1px solid green;
+  
+  float: left;
+  margin-right: 15px;
+} 
+
+.filter-btn {
+  min-width: 145px;
+  min-height: 37px;
+  
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 .catalog-items-list {
   font-size: 0;
@@ -658,7 +725,7 @@ main {
 .catalog-item-price {
   position: absolute;
   z-index: 2;
-  top: 215px;
+  top: 50%;
   
 }
 
@@ -841,17 +908,31 @@ main {
   line-height: 22px;
   color: #5a5a5a;
   margin: 0;
-  margin-bottom: 37px;
+  min-height: 100px;
 }
 
-.subscribe input {
-  width: 342px; /*TODO*/
+.form-container {
+  position: relative;
+}
+
+.form-container-left {
+  padding-right: 169px;
+}
+
+.form-container-left input {
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
   padding: 9px 12px;
   font-size: 16px;
   line-height: 24px;
   margin-right: 6px;
+}
+
+.form-container-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .map {
@@ -889,9 +970,21 @@ main {
   margin-top: 25px;
 }
 
+/*
+        <div class="feedback-popup">
+          <form action="#" method="post">
+            <div class="feedback-text">Мы обязательно вам ответим!</div>
+            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="text" name="email" placeholder="Ваша почта для ответа">
+            <textarea rows="5" name="text" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="btn" type="submit" name="send">Отправить</button>
+          </form>
+        </div>
+*/
+
 .feedback-popup {
-  /*position: fixed;
-  display: none;*/
+  position: fixed;
+  display: none;
   background-color: #eeeeee;
   border-radius: 15px;
   color: #000000; 
@@ -915,16 +1008,17 @@ main {
 
 
 footer {
-  position: relative;
+  text-align: center;
   min-height: 100px;
+  font-size: 14px;
+  padding-top: 20px;
 }
 
 .footer-social {
-  position: absolute;
-  top: 0;
-  left: 2.3%;
+  float: left;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
   list-style: none;  
   font-size: 0;
 }
@@ -935,23 +1029,24 @@ footer {
 
 .btn-social {
   display: inline-block;
-  width: 29px;
-  height: 29px;
+  width: 32px;
+  height: 32px;
 
-  border: 3px solid #c2cec7;
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+  margin-right: 12px;
 }
 
 .btn-social-twitter {
-  background: #849d8f url(../img/social-twitter.png) no-repeat 50% 50%;
+  background: url(../img/social-twitter.png) no-repeat 50% 50%;
 }
 
 .btn-social-instagram {
-  background: #849d8f url(../img/social-insta.png) no-repeat 50% 50%;
+  background: url(../img/social-insta.png) no-repeat 50% 50%;
 }
 
 .btn-social-fb {
-  background: #849d8f url(../img/social-fb.png) no-repeat 50% 50%;
+  background: url(../img/social-fb.png) no-repeat 50% 50%;
 }
 
 .btn-social-vk {
@@ -959,13 +1054,16 @@ footer {
 }
  
 .footer-info {
-  display: block;
+  display: inline-block;
   max-width: 350px;
   margin: 0 auto;
+  padding-top: 10px;  
 }
 
 .footer-info-left {
   display: inline-block;
+  text-align: left;
+  margin-right: 10px;
 }
 
 .information-for-vendors {
@@ -973,16 +1071,14 @@ footer {
 
 .footer-info-right {
   display: inline-block;
+  text-align: left;
 }
 
 .footer-copyright {
-  position: absolute;
-  top: 0;
-  right: 2.3%;
+  float: right;
+  font-size: 12px;
 }
 
 .footer-copyright img {
   display: block;
 }
-
-
